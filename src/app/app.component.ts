@@ -15,14 +15,16 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.function();
+        this.myArray=[{name: "Nick Saban"},{name: "Bret Bielema"},{name: "Gus Malzahn"},{name: "Jim McElwain"},{name: "Kirby Smart"},{name: "Hugh Freeze"}]
+
     this.submitted();
+
   }
   public function() {
     this.myArray = [];
     for (let i = this.number; i > 0; i--) {
       this.myArray.push({ name: "" })
     }
-    this.myArray=[{name: "Nick Saban"},{name: "Bret Bielema"},{name: "Gus Malzahn"},{name: "Jim McElwain"},{name: "Kirby Smart"},{name: "Hugh Freeze"}]
   };
 
   public submitted() {
